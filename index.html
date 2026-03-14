@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Varahasini — Frontend Developer from Visakhapatnam" />
+  <title>Varahasini | Frontend Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-text">Vara<span>.</span></div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- CURSOR GLOW -->
+  <div id="cursor-glow"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">Vara<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home" class="hero">
+    <canvas id="particles"></canvas>
+
+    <div class="hero-inner">
+      <div class="hero-top">
+        <div class="availability-badge">
+          <span class="dot-green"></span>
+          Available for opportunities
+        </div>
+        <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Visakhapatnam, India</p>
+      </div>
+
+      <div class="hero-main">
+        <h1 class="hero-name">
+          <span class="name-line">Dadireddy</span>
+          <span class="name-line accent">Varahasini</span>
+        </h1>
+        <div class="hero-role-wrapper">
+          <span class="role-prefix">I'm a </span>
+          <h2 class="hero-title">Frontend Developer</h2>
+        </div>
+        <p class="hero-tagline">
+          I don't just write code — I craft <em>experiences</em> that people remember.
+        </p>
+      </div>
+
+      <div class="hero-bottom">
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">See My Work <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vara-dadireddy-933784326" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:dadireddyvarahasini@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="about">
+    <div class="section-container">
+      <span class="section-number">01 — Who I Am</span>
+      <h2 class="section-title">About <em>Me</em></h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Hi! I'm <strong>Varahasini</strong>, a detail-oriented Frontend Developer based in
+            <strong>Visakhapatnam, India</strong>. I build clean, responsive, and user-friendly
+            websites that solve real problems and deliver great user experiences.
+          </p>
+          <p>
+            I'm currently growing as a Full Stack Developer using modern web technologies,
+            and working on my portfolio as part of my internship at <strong>Future Interns</strong>.
+          </p>
+          <p>
+            I'm passionate about writing clean code, continuously improving my skills,
+            and turning ideas into beautiful, functional websites.
+          </p>
+          <a href="images/resume.pdf" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <h3>1+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-card">
+            <h3>3+</h3>
+            <p>Technologies Learning</p>
+          </div>
+          <div class="stat-card">
+            <h3>100%</h3>
+            <p>Dedication</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section id="skills" class="skills">
+    <div class="section-container">
+      <span class="section-number">02 — What I Know</span>
+      <h2 class="section-title">My <em>Skills</em></h2>
+      <p class="section-subtitle">Technologies I'm learning and working with</p>
+     <div class="skills-grid">
+  <div class="skill-card">
+    <i class="fab fa-html5"></i>
+    <h3>HTML5</h3>
+    <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+    <span>85%</span>
+  </div>
+  <div class="skill-card">
+    <i class="fab fa-css3-alt"></i>
+    <h3>CSS3</h3>
+    <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+    <span>80%</span>
+  </div>
+  <div class="skill-card">
+    <i class="fab fa-js"></i>
+    <h3>JavaScript</h3>
+    <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+    <span>65%</span>
+  </div>
+  <div class="skill-card">
+    <i class="fab fa-react"></i>
+    <h3>React.js</h3>
+    <div class="skill-bar"><div class="skill-fill" data-width="40%"></div></div>
+    <span>40%</span>
+  </div>
+  <div class="skill-card">
+    <i class="fab fa-python"></i>
+    <h3>Python</h3>
+    <div class="skill-bar"><div class="skill-fill" data-width="60%"></div></div>
+    <span>60%</span>
+  </div>
+  <div class="skill-card">
+    <i class="fas fa-c"></i>
+    <h3>C Programming</h3>
+    <div class="skill-bar"><div class="skill-fill" data-width="55%"></div></div>
+    <span>55%</span>
+  </div>
+  <div class="skill-card">
+    <i class="fab fa-git-alt"></i>
+    <h3>Git & GitHub</h3>
+    <div class="skill-bar"><div class="skill-fill" data-width="55%"></div></div>
+    <span>55%</span>
+  </div>
+  <div class="skill-card">
+    <i class="fas fa-mobile-alt"></i>
+    <h3>Responsive Design</h3>
+    <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+    <span>80%</span>
+  </div>
+  <div class="skill-card">
+    <i class="fas fa-brain"></i>
+    <h3>AI / ML Basics</h3>
+    <div class="skill-bar"><div class="skill-fill" data-width="45%"></div></div>
+    <span>45%</span>
+  </div>
+</div>
+    </div>
+  </section>
+
+
+ <!-- ========== PROCESS SECTION ========== -->
+<section id="process" class="process">
+  <div class="section-container">
+    <span class="section-number">03 — How I Work</span>
+    <h2 class="section-title">My <em>Process</em></h2>
+    <p class="section-subtitle">How I approach every project from start to finish</p>
+    <div class="process-grid">
+
+      <div class="process-card">
+        <div class="process-number">01</div>
+        <h3>Research</h3>
+        <p>I start by understanding the goal, the users, and the problem. Good research means fewer mistakes later.</p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-number">02</div>
+        <h3>Design</h3>
+        <p>Planning the layout, structure, and visual style before writing a single line of code. Clean design = clean code.</p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-number">03</div>
+        <h3>Code</h3>
+        <p>Writing clean, responsive, and efficient code using modern web technologies and best practices.</p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-number">04</div>
+        <h3>Deploy</h3>
+        <p>Testing across devices, refining details, and deploying — making sure everything works perfectly before launch.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects" class="projects">
+    <div class="section-container">
+      <span class="section-number">04 — What I Built</span>
+      <h2 class="section-title">My <em>Projects</em></h2>
+      <p class="section-subtitle">Things I've built so far</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/project1.png" alt="Portfolio Website" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-small">Live Demo</a>
+              <a href="#" class="btn btn-small">GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Personal Portfolio</h3>
+            <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+  <div class="project-image">
+    <img src="images/project2.png" alt="PathFinder Pro" />
+    <div class="project-overlay">
+      <a href="#" class="btn btn-small">Live Demo</a>
+      <a href="#" class="btn btn-small">GitHub</a>
+    </div>
+  </div>
+  <div class="project-info">
+    <h3>PathFinder Pro</h3>
+    <p>A Career Guidance Platform for Indian Students studying 10th and 12th — helping them discover the right career path based on their interests and strengths.</p>
+    <div class="project-tags">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Career Tech</span>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="contact">
+    <div class="section-container">
+      <span class="section-number">05 — Let's Talk</span>
+      <h2 class="section-title">Get In <em>Touch</em></h2>
+      <p class="section-subtitle">Feel free to reach out for opportunities or just to say hello!</p>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>dadireddyvarahasini@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Visakhapatnam, India</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>vara-dadireddy</p>
+            </div>
+          </div>
+          <div class="contact-meta">
+            <div class="contact-meta-item">
+              <label>Availability</label>
+              <p>Open to New Work</p>
+            </div>
+            <div class="contact-meta-item">
+              <label>Preferred Work</label>
+              <p>Internship · Freelance</p>
+            </div>
+            <div class="contact-meta-item">
+              <label>Location</label>
+              <p>Visakhapatnam · IST</p>
+            </div>
+            <div class="contact-meta-item">
+              <label>Response Time</label>
+              <p>Within 24 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <input type="text" id="name" placeholder="Your Name" />
+          <input type="email" id="email" placeholder="Your Email" />
+          <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+          <button class="btn btn-primary" id="send-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p id="form-status"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>Crafted by <strong>Varahasini</strong> · 2026</p>
+    <div class="footer-socials">
+      <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/vara-dadireddy-933784326" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
