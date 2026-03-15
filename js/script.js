@@ -172,21 +172,46 @@ drawParticles();
 
 
 // ===== CONTACT FORM =====
-document.getElementById('send-btn').addEventListener('click', () => {
+document.getElementById('send-btn').addEventListener('click', async () => {
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
   const message = document.getElementById('message').value.trim();
   const status = document.getElementById('form-status');
+  const btn = document.getElementById('send-btn');
+
   if (!name || !email || !message) {
     status.textContent = '⚠️ Please fill in all fields.';
     status.style.color = '#ff6b6b';
     return;
   }
-  status.textContent = `✅ Thanks ${name}! I'll get back to you soon.`;
-  status.style.color = '#4ade80';
-  document.getElementById('name').value = '';
-  document.getElementById('email').value = '';
-  document.getElementById('message').value = '';
+
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  try {
+      const response = await fetch('https://formspree.io/f/mlgpwoqr', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, message })
+    });
+
+    if (response.ok) {
+      status.textContent = `✅ Thanks ${name}! I'll get back to you soon.`;
+      status.style.color = '#4ade80';
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    } else {
+      status.textContent = '❌ Something went wrong. Please try again!';
+      status.style.color = '#ff6b6b';
+    }
+  } catch (err) {
+    status.textContent = '❌ Network error. Please try again!';
+    status.style.color = '#ff6b6b';
+  }
+
+  btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+  btn.disabled = false;
 });
 
 // ===== SMOOTH SCROLL =====
